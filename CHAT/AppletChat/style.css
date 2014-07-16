@@ -1,0 +1,59 @@
+
+
+body { 
+       margin-top: 3%;
+       margin-left: 20%;
+       margin-bottom: 2%;
+       margin-right: 20%;     
+}
+
+.str  {
+    width: 100%; 
+    padding: 3%;
+    margin-bottom: 5%;
+    color: white;
+    position: relative; 
+    background-color: #003399;   
+}
+
+
+
+ol{
+    position: relative; 
+   margin-top: 5%;
+  margin-left: 50%;  
+}
+ol li{
+   
+    margin-bottom: 2%;
+    margin-top: 2%;
+  
+}
+
+#text{
+   
+}
+
+#text{
+        float:left; 
+        position: relative;     
+        text-align: justify; 
+        text-indent:20px;
+	-webkit-box-shadow: -10px 10px 10px #DDD;
+	-moz-box-shadow: -10px 10px 10px #DDD;
+	box-shadow: -10px 10px 10px #DDD;
+	border: solid 1px #AAA;
+	padding: 6px;
+        width: 45%;
+        height: 40%;
+        font-style:normal;       
+}
+
+#jmeno{
+    width: 40%;
+    position: relative;
+    margin-top: -35%;
+    margin-left: 3%;
+    font-size: 15px;
+    text-align: center;
+}
