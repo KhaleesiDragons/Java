@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/tableStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="form-style-6">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="person : ${list}">
+            <td th:text="${person.id}"></td>
+            <td th:text="${person.name}"></td>
+            <td th:text="${person.email}"></td>
+        </tr>
+    </table>
+    <a href="/">Add new Person again</a>
+</div>
+</body>
+</html>
