@@ -44,17 +44,17 @@ public class MyTest {
     public void testB() throws InterruptedException {
         mainPage.clickFlights();
         flightsPage.selectDestination("Sydney", "Acapulco");
-        flightsPage.selectMonth("September","December");
-        flightsPage.selectDay("2","15");
+        flightsPage.selectMonth("July","July");
+        flightsPage.selectDay("22","30");
         flightsPage.clickFindFlights();
-        flightSelectPage.verifyDate("9/2/2018", "12/15/2018");
+        flightSelectPage.verifyDate("7/22/2018", "7/30/2018");
         flightSelectPage.verifyDestination("Sydney", "Acapulco");
         flightSelectPage.clickContinue();
-        bookFlight.verifyDates("9/2/2018", "12/15/2018");
+        bookFlight.verifyDates("7/22/2018", "7/30/2018");
         bookFlight.verifyDestination("Sydney", "Acapulco");
         bookFlight.fillForm("TestName", "TestLastName", "123456");
         flightConfirmPage.verifyDestination("Sydney", "Acapulco");
-        flightConfirmPage.verifyDate("9/2/2018", "12/15/2018");
+        flightConfirmPage.verifyDate("7/22/2018", "7/30/2018");
     }
 
     @AfterSuite
